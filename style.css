@@ -51,19 +51,23 @@
   font-size: 16px;
   line-height: 26px;
 }
-.hero button {
+.com-button {
   padding: 16px 25px;
   display: flex;
   width: max-content;
   align-items: center;
   gap: 10px;
+  font-size: 20px;
   background-color: var(--primary-color);
   color: var(--primary-text);
   border-radius: 5px;
   border: 0;
 }
-.hero button * {
+.com-button * {
   margin: 0;
+}
+.tab-button {
+  display: none;
 }
 
 main {
@@ -159,4 +163,50 @@ footer ul a {
 footer hr {
   margin: 50px 140px;
   color: #b9b9b9;
+}
+/* 
+    note media quereies
+
+*/
+@media only screen and (max-width: 992px) and (min-width: 576px) {
+  .hero {
+    margin: 50px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .com-button {
+    padding: 12px;
+  }
+  .tab-button {
+    display: block;
+    margin: 50px auto;
+  }
+  main {
+    flex-direction: column;
+    margin: 50px;
+  }
+  main nav {
+    flex-direction: row;
+    padding: 0;
+    height: 78px;
+    flex-grow: 1;
+    background-color: #fff;
+    justify-content: space-between;
+    gap: 22px;
+  }
+  main nav a {
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  main .blog {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    margin: 0 100px;
+  }
 }
