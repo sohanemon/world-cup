@@ -96,10 +96,13 @@ main nav a {
   text-decoration: none;
   background-color: #fff;
   color: var(--secondary-text);
+
+  border: 1px solid #e8e8e8;
 }
 main nav .active {
   background-color: var(--primary-color);
   color: var(--primary-text);
+  border: 0;
 }
 main .blog {
   display: grid;
@@ -126,6 +129,7 @@ main article button {
   padding: 4px 17px;
   border-radius: 5px;
   font-weight: 800;
+  border: 1px solid #e8e8e8;
 }
 
 main article > div > div {
@@ -164,6 +168,16 @@ footer hr {
   margin: 50px 140px;
   color: #b9b9b9;
 }
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+footer .social-icons i {
+  color: #b9b9b9;
+  font-size: 30px;
+}
 /* 
     note media quereies
 
@@ -197,10 +211,12 @@ footer hr {
     gap: 22px;
   }
   main nav a {
-    border: 1px solid #e8e8e8;
     width: 100%;
     display: flex;
     align-items: center;
+  }
+  footer hr {
+    margin: 50px 40px;
   }
   main .blog {
     grid-template-columns: 1fr 1fr;
@@ -208,5 +224,48 @@ footer hr {
   footer ul {
     flex-wrap: wrap;
     margin: 0 100px;
+  }
+}
+/* Mobile device */
+@media only screen and (max-width: 576px) {
+  .hero {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hero > div:first-child {
+    text-align: center;
+    align-items: center;
+    padding: 50px 80px 30px;
+  }
+  .hero > div:last-child {
+    justify-content: center;
+    padding: 0 40px;
+  }
+  main {
+    flex-direction: column;
+    margin: 24px;
+  }
+
+  main nav {
+    align-items: center;
+    background-color: #fff;
+  }
+  main .blog {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  footer hr {
+    margin: 50px 10px;
+  }
+  footer ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
