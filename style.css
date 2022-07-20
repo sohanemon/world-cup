@@ -114,7 +114,7 @@ main nav a {
   background-color: #fff;
   color: var(--secondary-text);
 
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--secondary-color);
 }
 main nav .active {
   background-color: var(--primary-color);
@@ -131,8 +131,12 @@ main .blog {
 }
 .blog article {
   box-shadow: 0px 0px 3px var(--secondary-color);
+
   border-radius: 10px;
   color: var(--primary-color);
+}
+.blog article:hover {
+  box-shadow: 0px 0px 4px var(--primary-color);
 }
 
 .blog article > div:last-child {
@@ -142,6 +146,7 @@ main .blog {
   padding: 20px;
 }
 .blog article button {
+  cursor: pointer;
   width: max-content;
   padding: 4px 17px;
   border-radius: 5px;
@@ -209,7 +214,11 @@ footer .social-icons i {
   text-align: center;
   color: var(--primary-color);
   border-radius: 5px;
+  cursor: pointer;
   border: 1px solid var(--secondary-color);
+}
+.events article:hover {
+  border: 1px solid var(--primary-color);
 }
 .events img {
   width: 100%;
