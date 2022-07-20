@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #dd0000;
+  --secondary-color: #161616;
+  --primary-text: #fff;
+  --secondary-text: #161616;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 140px;
+  background-color: var(--secondary-color);
+  color: var(--primary-text);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.hero div:first-child {
+  padding: 110px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero div:last-child {
+  display: flex;
+  align-items: end;
+}
+.hero:hover img {
+  transform: scale(1.05);
+}
+.hero > * {
+  flex: 1 0 50%;
+}
+.hero img {
+  width: 90%;
+  transition: transform 1s ease;
+}
+.hero h1 {
+  line-height: 80px;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.hero button {
+  padding: 16px 25px;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+  border-radius: 5px;
+  border: 0;
+}
+.hero button * {
+  margin: 0;
+}
