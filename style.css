@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
 }
 .hero div:last-child {
   display: flex;
@@ -63,4 +64,72 @@
 }
 .hero button * {
   margin: 0;
+}
+
+main {
+  margin: 50px 140px;
+  display: flex;
+  gap: 24px;
+}
+main nav {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  width: 312px;
+  height: 312px;
+  justify-content: space-evenly;
+}
+main nav a {
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 17px 39px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--secondary-text);
+}
+main nav .active {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
+main .blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: space-between; */
+  gap: 24px;
+}
+main .blog img {
+  width: 100%;
+}
+main article {
+  box-shadow: 0px 0px 3px gray;
+  border-radius: 10px;
+}
+
+main article > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+main article button {
+  width: max-content;
+  padding: 4px 17px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+main article > div > div {
+  display: flex;
+  gap: 30px;
+}
+main article > div > div span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
