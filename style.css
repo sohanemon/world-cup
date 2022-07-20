@@ -67,7 +67,7 @@
 }
 
 main {
-  margin: 50px 140px;
+  margin: 100px 140px;
   display: flex;
   gap: 24px;
 }
@@ -77,7 +77,7 @@ main nav {
   flex-direction: column;
   background-color: var(--secondary-color);
   border-radius: 10px;
-  width: 312px;
+  min-width: 312px;
   height: 312px;
   justify-content: space-evenly;
 }
@@ -132,4 +132,31 @@ main article > div > div span {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+footer {
+  padding: 130px 0;
+  background-color: var(--secondary-color);
+}
+footer h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--primary-text);
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+footer hr {
+  margin: 50px 140px;
+  color: #b9b9b9;
 }
